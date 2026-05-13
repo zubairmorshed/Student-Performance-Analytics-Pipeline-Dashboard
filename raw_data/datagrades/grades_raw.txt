@@ -1,0 +1,22 @@
+student_id,course,grade,term
+1001,Math,85,Fall 2023
+1002,Math,  92 ,Fall 2023
+1003,Math,78,Fall 2023
+1004,Math,88,Fall 2023
+1005,Math, ,Fall 2023
+1006,Math,91,Fall 2023
+1007,Math,73,Fall 2023
+1008,Math,89,Fall 2023
+1009,Math,95,Fall 2023
+1010,Math,82,Fall 2023
+1003,Math,78,Fall 2023   <-- duplicate
+1011,Math,87,Fall 2023
+1012,Math,90,Fall 2023
+1013,Math,76,Fall 2023
+1014,Math,84,Fall 2023
+1015,Math,88,Fall 2023
+1016,Math,  NULL ,Fall 2023
+1017,Math,92,Fall 2023
+1018,Math,85,Fall 2023
+1019,Math,78,Fall 2023
+1020,Math,91,Fall 2023

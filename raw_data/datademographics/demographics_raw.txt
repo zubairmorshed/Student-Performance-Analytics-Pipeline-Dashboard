@@ -1,0 +1,22 @@
+student_id,first_name,last_name,gender,ethnicity,date_of_birth
+1001, John ,Doe ,M,White,2008-05-12
+1002, jane,Smith,F,Asian,05/14/2007
+1003,Michael, Brown ,M,Black,2007/11/02
+1004,Emily,Johnson,F,Hispanic,2008-3-7
+1005,Chris,,M,White,2008-09-21
+1006, Sarah ,Davis,F,,2007-12-01
+1007,David,Wilson,M,Black,2008-01-15
+1008,Anna,Moore,F,Asian,2007-07-30
+1009,Robert, Taylor ,M,Hispanic,2008-02-28
+1010,Laura,Anderson,F,White,2007-10-10
+1003,Michael, Brown ,M,Black,2007/11/02   <-- duplicate
+1011,   peter,Thomas,M,white,2008-04-19
+1012,Mary,Lee,F,Asian,2007-08-08
+1013,James,Martin,M,Hispanic,2008-06-06
+1014,Linda,Clark,F,Black,2007-09-09
+1015, ,Hall,F,White,2008-01-01
+1016,Kevin,Young,M,,2007-05-05
+1017,Amy,King,F,Asian,2008-12-12
+1018,John,Doe,M,White,2008-05-12   <-- intentional duplicate
+1019,Michael, Brown ,M,Black,   <-- missing DOB
+1020,Chris,Green,M,Hispanic,2007-03-03
