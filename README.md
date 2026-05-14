@@ -20,7 +20,7 @@ All files are included in the raw_data/ folder.
 Tableau Public – dashboard creation, GitHub – version control and documentation, CSV files – data source and SQL – for data cleaning or modeling steps
 
 # - Dashboard
-View the live dashboard on Tableau Public: https://public.tableau.com/app/profile/zubair.morshed/viz/StudentRecordsAnalytics/StudentRecordsAnalytics#1
+[View the Dashboard on Tableau Public](https://public.tableau.com/your-dashboard-link)
 
 ![Dashboard Preview](dashboard_teaser.png)
 # - Git Repository Structure
