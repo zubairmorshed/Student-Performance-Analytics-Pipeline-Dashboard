@@ -1,57 +1,93 @@
-## Student Performance Analytics Pipeline & Dashboard
+# Student Performance Analytics Pipeline & Dashboard
 
-An end-to-end analytics project simulating an Analytics Engineer workflow, including data preparation, transformation, validation, and reporting using SQL and Tableau.
+An end-to-end analytics project demonstrating how raw data is transformed into structured, analysis-ready datasets and interactive dashboards using SQL and Tableau.
+
+This project reflects core Analytics Engineering concepts, including data cleaning, transformation, validation, dimensional modeling, and reporting.
 
 ---
 
 ## Project Overview
 
-This project analyzes student demographics and academic performance by transforming raw datasets into structured, analysis-ready data models and visual dashboards.
+This project analyzes student demographics and academic performance by transforming raw datasets into a structured reporting layer that supports analytical queries and dashboard visualization.
 
-It demonstrates how raw data can be converted into reliable reporting outputs through data cleaning, transformation, and validation.
+The focus is on building reliable datasets through data quality validation and transformation logic, ensuring accurate and consistent reporting outputs.
+
+---
+
+## End-to-End Workflow
+
+Raw Data (CSV)  
+→ Data Cleaning & Transformation (SQL)  
+→ Exploratory Validation  
+→ Dimensional Modeling (Fact & Dimension Tables)  
+→ Reporting Layer (Tableau Extracts)  
+→ Dashboard Visualization (Tableau)
 
 ---
 
 ## Data Architecture
 
-The project follows a simplified analytics workflow:
+The data pipeline is designed using a structured, layered approach:
 
-Raw Data (CSV)  
-→ Data Cleaning & Transformation (SQL)  
-→ Structured Reporting Layer  
-→ Tableau Dashboard  
+- Raw Layer  
+  Source CSV files organized by domain (demographics, grades, ELA)
+
+- Transformation Layer (SQL)  
+  Data cleaning, aggregation, and validation logic
+
+- Modeling Layer  
+  Fact and dimension tables for analytics
+
+- Reporting Layer  
+  Clean datasets prepared for Tableau
+
+- Visualization Layer  
+  Interactive dashboards in Tableau
+
+---
+
+## Repository Structure
+
+This structure separates raw data, transformation logic, validation, and reporting layers to simulate a real-world analytics engineering pipeline.
+
+student-performance-analytics/
+|-- raw_data/
+|   |-- data_demographics/
+|   |-- data_grades/
+|   |-- data_ela/
+|
+|-- sql/
+|   |-- create_tables/
+|   |-- data_cleaning/
+|   |-- exploratory_queries/
+|   |-- modeling/
+|
+|-- tableau/
+|   |-- dashboard/
+|   |-- table_extracts/
+|
+|-- documentation/
+|
+|-- dashboard_peek.png
+|-- README.md
 
 ---
 
 ## Data Modeling Approach
 
-The dataset is organized using a fact/dimension-style approach:
+- Dimension Table: student_dim  
+- Fact Tables: fact_grades, fact_ela  
 
-- **student_dim.csv** → Dimension table (student demographics)
-- **fact_grades.csv** → Fact table (math scores)
-- **fact_ela.csv** → Fact table (reading & writing performance)
-
-Relationships are created using `student_id` to support analytical queries and reporting.
+All tables are linked using student_id.
 
 ---
 
 ## Data Transformation & Validation
 
-SQL is used to:
-
-- Clean and standardize raw data  
-- Validate consistency across datasets  
-- Handle missing or null values  
-- Ensure alignment of metrics between datasets  
-- Prepare aggregated outputs for reporting  
-
----
-
-## Tools Used
-
-- **SQL** – Data cleaning, transformation, and validation  
-- **Tableau Public** – Dashboard development and visualization  
-- **GitHub** – Version control and documentation  
+- Data cleaning and standardization
+- Handling missing values
+- Validating consistency across datasets
+- Preparing data for reporting
 
 ---
 
@@ -59,43 +95,29 @@ SQL is used to:
 
 [View the Tableau Dashboard](https://public.tableau.com/app/profile/zubair.morshed/viz/StudentPerformanceAnalyticsDashboard_17787789622650/StudentPerformanceAnalyticsDashboard)
 
-The dashboard presents:
-
-- Student performance trends  
-- Demographic breakdowns  
-- Comparative analysis across subjects  
-
 ---
 
 ## What This Project Demonstrates
 
-- Structuring raw data into analysis-ready datasets  
-- Applying data transformation and validation techniques  
-- Designing data models to support reporting  
-- Building dashboards based on validated data outputs  
-- Linking backend data preparation to front-end analytics  
+- End-to-end analytics workflow
+- SQL-based transformation and validation
+- Data modeling (fact and dimension tables)
+- Data quality and reporting readiness
 
 ---
 
-## Repository Structure
+## How to Reproduce
 
-``
+1. Download data from raw_data
+2. Review SQL scripts
+3. Load data into Tableau
+4. Create relationships using student_id
 
-# - Key Insights
-Total students: 20
-Gender split: 11 Male, 9 Female
-Ethnicity distribution: White (30%), Asian (20%), Black (20%), Hispanic (20%), Null (10%)
-Math grades range from 73–95
-ELA scores show variation between reading and writing performance
+---
 
-# - How to Reproduce
-Download the CSV files from the raw_data/ folder
-Open Tableau Public (Link provided above)
-Upload all three CSVs
-Create relationships using student_id
-Build the dashboard using the worksheets included in this project
+## Author
 
-# - Contact
-Created by Zubair Morshed  
-Aspiring Analytics Engineer
+Zubair Morshed
 Queens, NY
+
+QA Engineer transitioning into Analytics Engineering
