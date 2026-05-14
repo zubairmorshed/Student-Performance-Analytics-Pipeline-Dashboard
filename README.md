@@ -26,22 +26,26 @@ View the live dashboard on Tableau Public: https://public.tableau.com/app/profil
 # - Git Repository Structure
 student-records-analytics-engineering-project/
     - documentation (Optional)
+    
     - raw_data/
         - datademographics > student_dim.txt
         - datagrades > fact_grades.txt
         - ela > fact_ela.txt
+    
     - SQL/
         - create_tables > multiple SQL create queries
         - data_cleaning > multiple SQL data cleaning queries
         - exploratory_queries > multiple SQL exploratory queries
         - modeling > fim and fact queries
+    
     - tableau/
         - dashboard > Student Records Analytics.twbx
         - table_extarcts > three clean .csv files contain demographics, grades, and ELA data
-    - README.md > This doc
+    
     - README.md > This doc
         - dashboard > Student Records Analytics.twbx
         - table_extarcts > three clean .csv files contain demographics, grades, and ELA data
+
 # - Key Insights
 Total students: 20
 Gender split: 11 Male, 9 Female
@@ -56,7 +60,7 @@ Upload all three CSVs
 Create relationships using Student Id
 Build the dashboard using the worksheets included in this project
 
-📬 Contact
+# - Contact
 Created by Zubair Morshed  
 Aspiring Analytics Engineer
 Queens, NY
