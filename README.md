@@ -23,6 +23,7 @@ Tableau Public – dashboard creation, GitHub – version control and documentat
 [View the Dashboard on Tableau Public](https://public.tableau.com/app/profile/zubair.morshed/viz/StudentRecordsAnalytics/StudentRecordsAnalytics)
 
 ![Dashboard Preview](dashboard_peek.png)
+
 # - Git Repository Structure
 student-records-analytics-engineering-project/
     - documentation (Optional)
