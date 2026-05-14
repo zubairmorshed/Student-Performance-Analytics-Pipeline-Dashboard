@@ -1,59 +1,61 @@
-# \# Student Records Analytics Engineering Project
+# Student Records Analytics Dashboard
+A Tableau dashboard analyzing student demographics and academic performance.
+This project demonstrates core Analytics Engineering skills, including data cleaning, modeling, visualization, and documentation.
 
-# \- This project demonstrates an end-to-end Analytics Engineering workflow using the following:
+# - Project Overview
+This project analyzes a sample student dataset to understand:
 
-# \- Raw K-12 student data (Demographics, Grades, ELA) files with realistic data quality issues
+Gender distribution, Ethnicity distribution, Math grade distribution, ELA (Reading & Writing) performance, Total student count
 
-# \- SQL Server Express for data cleaning and modeling with table creation, cleaning, and modeling
+The dashboard provides a clear, interactive view of student performance trends and demographic breakdowns.
 
-# \- Tableau Public for interactive dashboards using the above-mentioned tables 
+# - Data Sources
+The project uses three CSV files:
 
-# \- GitHub for version control and documentation
+student_dim.csv – student demographic information, fact_grades.csv – math grades amd fact_ela.csv – reading and writing scores
 
-# \- Project Structure
-Code
-documentation/          ← optional notes, data dictionary, ERD (future use)
-raw_data/               ← original TXT files
+All files are included in the raw_data/ folder.
 
-SQL/
-  create_tables/        ← table creation scripts
-  data_cleaning/        ← cleaning + deduplication scripts
-  modeling/             ← student_dim, fact_grades, fact_ela
-  exploratory_queries/  ← analysis queries
+# - Tools Used
+Tableau Public – dashboard creation, GitHub – version control and documentation, CSV files – data source and SQL – for data cleaning or modeling steps
 
-tableau/                ← dashboard files (coming soon)
+# - Dashboard
+View the live dashboard on Tableau Public: https://public.tableau.com/app/profile/zubair.morshed/viz/StudentRecordsAnalytics/StudentRecordsAnalytics#1
 
-README.md
+# - Git Repository Structure
+student-records-analytics-engineering-project/
+    - documentation (Optional)
+    - raw_data/
+        - datademographics > student_dim.txt
+        - datagrades > fact_grades.txt
+        - ela > fact_ela.txt
+    - SQL/
+        - create_tables > multiple SQL create queries
+        - data_cleaning > multiple SQL data cleaning queries
+        - exploratory_queries > multiple SQL exploratory queries
+        - modeling > fim and fact queries
+    - tableau/
+        - dashboard > Student Records Analytics.twbx
+        - table_extarcts > three clean .csv files contain demographics, grades, and ELA data
+    - README.md > This doc
+    - README.md > This doc
+        - dashboard > Student Records Analytics.twbx
+        - table_extarcts > three clean .csv files contain demographics, grades, and ELA data
+# - Key Insights
+Total students: 20
+Gender split: 11 Male, 9 Female
+Ethnicity distribution: White (30%), Asian (20%), Black (20%), Hispanic (20%), Null (10%)
+Math grades range from 73–95
+ELA scores show variation between reading and writing performance
 
-# \- Data Pipeline
+# - How to Reproduce
+Download the CSV files from the raw_data/ folder
+Open Tableau Public (Link provided above)
+Upload all three CSVs
+Create relationships using Student Id
+Build the dashboard using the worksheets included in this project
 
-Raw Data - Demographics. Grades, ELA scores
-
-Table Creation - Created base tables for raw, clean, and modeling layers
-
-Cleaning Layer = Standardized column names, Fixed data types, Removed duplicates, Created “dupliclean” tables
-
-Modeling Layer = student_dim. fact_grades, fact_ela
-
-Exploratory Queries = Student counts, Grade allocation. ELA trends, Demographic allocations, Course averages, 
-
-Tableau Dashboard (Coming Soon) - Will visualize student performance and trends
-
-# \- Key SQL Files
-Table Creation > create_demographics_tables.sql, create_grades_tables.sql, create_ela_tables.sql
-
-Cleaning > dupliclean_demographics.sql, dupliclean_grades.sql, dupliclean_ela.sql
-
-Modeling > student_dim.sql, fact_grades.sql, fact_ela.sql
-
-Exploratory Queries > Examples: grade_allocation_by_course.sql, ela_scores_by_term.sql, gender_allocation.sql, course_avg.sql
-
-▶️ How to Reproduce
-Create a SQL Server database named StudentRecords > Execute the scripts in SQL/create_tables/ > Execute the cleaning scripts in SQL/data_cleaning/ > Execute the modeling scripts in SQL/modeling/ > Execute the exploratory queries in SQL/exploratory_queries/
-
-Connect Tableau to the database for visualization
-
-📊 Tableau Dashboard
-Coming soon  
-A link will be added here once the dashboard is published.
-
+📬 Contact
+Created by Zubair Morshed  
+Aspiring Analytics Engineer
+Queens, NY
