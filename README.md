@@ -22,7 +22,7 @@ Tableau Public – dashboard creation, GitHub – version control and documentat
 # - Dashboard
 View the live dashboard on Tableau Public: https://public.tableau.com/app/profile/zubair.morshed/viz/StudentRecordsAnalytics/StudentRecordsAnalytics#1
 
-![Dashboard Preview](dashboard_preview.png)
+![Dashboard Preview](dashboard_teaser.png)
 # - Git Repository Structure
 student-records-analytics-engineering-project/
     - documentation (Optional)
@@ -57,7 +57,7 @@ ELA scores show variation between reading and writing performance
 Download the CSV files from the raw_data/ folder
 Open Tableau Public (Link provided above)
 Upload all three CSVs
-Create relationships using Student Id
+Create relationships using student_id
 Build the dashboard using the worksheets included in this project
 
 # - Contact
