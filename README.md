@@ -1,51 +1,85 @@
-# Student Records Analytics Dashboard
-A Tableau dashboard analyzing student demographics and academic performance.
-This project demonstrates core Analytics Engineering skills, including data cleaning, modeling, visualization, and documentation.
+## Student Performance Analytics Pipeline & Dashboard
 
-# - Project Overview
-This project analyzes a sample student dataset to understand:
+An end-to-end analytics project simulating an Analytics Engineer workflow, including data preparation, transformation, validation, and reporting using SQL and Tableau.
 
-Gender distribution, Ethnicity distribution, Math grade distribution, ELA (Reading & Writing) performance, Total student count
+---
 
-The dashboard provides a clear, interactive view of student performance trends and demographic breakdowns.
+## Project Overview
 
-# - Data Sources
-The project uses three CSV files:
+This project analyzes student demographics and academic performance by transforming raw datasets into structured, analysis-ready data models and visual dashboards.
 
-student_dim.csv – student demographic information, fact_grades.csv – math grades amd fact_ela.csv – reading and writing scores
+It demonstrates how raw data can be converted into reliable reporting outputs through data cleaning, transformation, and validation.
 
-All files are included in the raw_data/ folder.
+---
 
-# - Tools Used
-Tableau Public – dashboard creation, GitHub – version control and documentation, CSV files – data source and SQL – for data cleaning or modeling steps
+## Data Architecture
 
-# - Dashboard
-[View the Dashboard on Tableau Public](https://public.tableau.com/app/profile/zubair.morshed/viz/StudentRecordsAnalytics/StudentRecordsAnalytics)
+The project follows a simplified analytics workflow:
 
-![Dashboard Preview](dashboard_peek.png)
+Raw Data (CSV)  
+→ Data Cleaning & Transformation (SQL)  
+→ Structured Reporting Layer  
+→ Tableau Dashboard  
 
-# - Git Repository Structure
-student-records-analytics-engineering-project/
-    - documentation (Optional)
-    
-    - raw_data/
-        - datademographics > student_dim.txt
-        - datagrades > fact_grades.txt
-        - ela > fact_ela.txt
-    
-    - SQL/
-        - create_tables > multiple SQL create queries
-        - data_cleaning > multiple SQL data cleaning queries
-        - exploratory_queries > multiple SQL exploratory queries
-        - modeling > fim and fact queries
-    
-    - tableau/
-        - dashboard > Student Records Analytics.twbx
-        - table_extarcts > three clean .csv files contain demographics, grades, and ELA data
-    
-    - README.md > This doc
-        - dashboard > Student Records Analytics.twbx
-        - table_extarcts > three clean .csv files contain demographics, grades, and ELA data
+---
+
+## Data Modeling Approach
+
+The dataset is organized using a fact/dimension-style approach:
+
+- **student_dim.csv** → Dimension table (student demographics)
+- **fact_grades.csv** → Fact table (math scores)
+- **fact_ela.csv** → Fact table (reading & writing performance)
+
+Relationships are created using `student_id` to support analytical queries and reporting.
+
+---
+
+## Data Transformation & Validation
+
+SQL is used to:
+
+- Clean and standardize raw data  
+- Validate consistency across datasets  
+- Handle missing or null values  
+- Ensure alignment of metrics between datasets  
+- Prepare aggregated outputs for reporting  
+
+---
+
+## Tools Used
+
+- **SQL** – Data cleaning, transformation, and validation  
+- **Tableau Public** – Dashboard development and visualization  
+- **GitHub** – Version control and documentation  
+
+---
+
+## Dashboard
+
+[View the Tableau Dashboard](https://public.tableau.com/app/profile/zubair.morshed/viz/StudentPerformanceAnalyticsDashboard_17787789622650/StudentPerformanceAnalyticsDashboard)
+
+The dashboard presents:
+
+- Student performance trends  
+- Demographic breakdowns  
+- Comparative analysis across subjects  
+
+---
+
+## What This Project Demonstrates
+
+- Structuring raw data into analysis-ready datasets  
+- Applying data transformation and validation techniques  
+- Designing data models to support reporting  
+- Building dashboards based on validated data outputs  
+- Linking backend data preparation to front-end analytics  
+
+---
+
+## Repository Structure
+
+``
 
 # - Key Insights
 Total students: 20
